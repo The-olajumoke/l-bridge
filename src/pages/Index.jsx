@@ -13,8 +13,7 @@ export default function Index() {
       return item.paymentStatus == activeTab;
     }
   });
-  console.log(data);
-  // const [currentProducts, setcurrentProducts] = useState(data);
+
 
   return (
     <div className="h-screen p-4 bg-background  sm:px-10 lg:px-[100px] md:py-[50px] not-italic flex flex-col">

@@ -27,8 +27,9 @@ function ProductContainer(props) {
         </div>
       </div>
       <div className=" overflow-y-scroll no-scrollbar max-h-96">
-        {products.map((pro) => (
+        {products.map((pro, index) => (
           <ProductTemp
+            key={index}
             name={pro.name}
             email={pro.email}
             userStatus={pro.userStatus}
