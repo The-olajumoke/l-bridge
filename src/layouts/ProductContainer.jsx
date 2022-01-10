@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import more from "../Icons/More.svg";
 import leftArr from "../Icons/leftArr.svg";
 import rightArr from "../Icons/rightArr.svg";
-import { products } from "../pages/data";
 import ProductTemp from "./ProductTemp";
+import SeeMore from "../Icons/SeeMore.svg";
 
-export default function ProductContainer() {
+function ProductContainer(props) {
+  const { products } = props;
   return (
-    <>
-      <div className="uppercase border border-proBorder bg-input flex justify-between items-center  px-5 py-4 h-11 font-semibold text-xs leading-3  tracking-wider text-secFontColor gap-48 ">
+    <div className="">
+      <div className="uppercase border border-proBorder bg-input flex justify-between items-center  px-5 py-4  font-semibold text-xs leading-3  tracking-wider text-secFontColor sm:gap-4 lg:gap-32 ">
         {/* FIRST DIV */}
-        <div className="  flex items-center  justify-items-start flex-1 ">
-          <input type="checkbox" className=" mr-16" />
+        <div className="  flex items-center   justify-center   lg:justify-items-start flex-1 ">
+          <input type="checkbox" className="mr-16" />
           <h4 className="flex-1">Name</h4>
           <h4 className="flex-1">USER Status</h4>
         </div>
@@ -25,7 +26,7 @@ export default function ProductContainer() {
           <img className=" ml-7" src={more} alt="" />
         </div>
       </div>
-      <div className="">
+      <div className=" overflow-y-scroll no-scrollbar max-h-96">
         {products.map((pro) => (
           <ProductTemp
             name={pro.name}
@@ -40,16 +41,22 @@ export default function ProductContainer() {
         ))}
       </div>
       {/* <ProductTemp /> */}
-      <div className=" border border-proBorder p-3 bg-input  h-11 text-secFontColor flex justify-end  ">
+      <div className=" border border-proBorder p-3 bg-input  h-auto rounded-b-lg text-secFontColor flex justify-end  ">
         <div className="w-fit flex  text-xs  font-semibold -tracking-tighter text-secFontColor gap-12 ">
           <h4 className="">
-            Rows Per page: <span>10</span>
+            Rows Per page:
+            <span>
+              10
+              <img src={SeeMore} alt="" className="inline ml-2" />
+            </span>
           </h4>
           <h4>1-6 of 6</h4>
           <img className=" w-[7px]" src={leftArr} alt="" />
           <img className=" w-[7px]" src={rightArr} alt="" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
+export default ProductContainer;

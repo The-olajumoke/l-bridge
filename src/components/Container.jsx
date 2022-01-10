@@ -2,9 +2,11 @@ import React from "react";
 import filter from "../Icons/Filter.svg";
 import search from "../Icons/Search.svg";
 import ProductContainer from "../layouts/ProductContainer";
-function Container() {
+function Container(props) {
+      const { products } = props;
+
   return (
-    <div className=" w-full mt-5 bg-white  shadow-mainBox rounded-lg ">
+    <div className=" w-full mt-5 bg-white  shadow-mainBox rounded-lg  ">
       <div className="flex justify-between items-center py-4 px-5 ">
         <div className="flex gap-5 items-center">
           <button className="flex  gap-[10px] bg-white border border-border  rounded-md p-[10px] items-center justify-between text-base leading-4 text-priFontCont">
@@ -25,7 +27,7 @@ function Container() {
         </button>
       </div>
 
-      <ProductContainer />
+      <ProductContainer products={products}/>
     </div>
   );
 }

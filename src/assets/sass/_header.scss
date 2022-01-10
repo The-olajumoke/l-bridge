@@ -6,7 +6,9 @@
   font-weight: 700;
   background: #f7f6f4;
 }
-
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
 header {
 
   nav {

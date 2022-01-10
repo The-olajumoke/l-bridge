@@ -9,9 +9,9 @@ module.exports = {
       paid: "#007F00",
       lightPaid: "#CDFFCD",
       unpaid: "#965E00",
-      lightUnpaid:"#FFECCC",
+      lightUnpaid: "#FFECCC",
       overdue: "#D30000",
-      lightOverdue:"#FFE0E0",
+      lightOverdue: "#FFE0E0",
       btnPri: "#6D5BD0",
       white: "#FFFFFF",
       border: "#C6C2DE",
@@ -21,6 +21,8 @@ module.exports = {
     },
     extend: {
       padding: {
+        "1px": "1px",
+        "5px": "5px",
         "7px": "7px",
         "10px": "10px",
         "11px": "11px",
@@ -31,7 +33,7 @@ module.exports = {
       },
       height: {
         "10%": "10%",
-        '30%':'30%',
+        "30%": "30%",
       },
       boxShadow: {
         mainBox: "0px 0px 5px rgba(0, 0, 0, 0.2)",
