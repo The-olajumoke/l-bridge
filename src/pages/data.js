@@ -1,0 +1,32 @@
+export const products = [
+  {
+    name: "Justin Septimus",
+    email: "example@email.com",
+    userStatus: "active",
+    lastLogin: "14/APR/2020",
+    paymentStatus: "overdue",
+    statusOn: "15/APR/2020",
+    amount: "$300",
+    currency: "USD",
+  },
+  {
+    name: "Anika Rhiel Madsen",
+    email: "example@email.com",
+    userStatus: "Inactive",
+    lastLogin: "14/APR/2020",
+    paymentStatus: "Unpaid",
+    statusOn: "15/APR/2020",
+    amount: "$200",
+    currency: "CAD",
+  },
+  {
+    name: "Justin Septimus",
+    email: "example@email.com",
+    userStatus: "active",
+    lastLogin: "14/APR/2020",
+    paymentStatus: "Paid",
+    statusOn: "15/APR/2020",
+    amount: "$300",
+    currency: "USD",
+  },
+];
