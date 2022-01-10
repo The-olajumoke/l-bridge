@@ -27,19 +27,22 @@ function ProductContainer(props) {
         </div>
       </div>
       <div className=" overflow-y-scroll no-scrollbar max-h-96">
-        {products.map((pro, index) => (
-          <ProductTemp
-            key={index}
-            name={pro.name}
-            email={pro.email}
-            userStatus={pro.userStatus}
-            lastLogin={pro.lastLogin}
-            paymentStatus={pro.paymentStatus}
-            statusOn={pro.statusOn}
-            amount={pro.amount}
-            currency={pro.currency}
-          />
-        ))}
+        {products.map((pro, index) => {
+          return (
+            <ProductTemp
+              key={index}
+              name={pro.name}
+              email={pro.email}
+              userStatus={pro.userStatus}
+              lastLogin={pro.lastLogin}
+              paymentStatus={pro.paymentStatus}
+              statusOn={pro.statusOn}
+              amount={pro.amount}
+              currency={pro.currency}
+              moreDetails={pro.moreDetails}
+            />
+          );
+        })}
       </div>
       {/* <ProductTemp /> */}
       <div className=" border border-proBorder p-3 bg-input  h-auto rounded-b-lg text-secFontColor flex justify-end  ">

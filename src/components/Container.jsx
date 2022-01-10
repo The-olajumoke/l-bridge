@@ -3,7 +3,7 @@ import filter from "../Icons/Filter.svg";
 import search from "../Icons/Search.svg";
 import ProductContainer from "../layouts/ProductContainer";
 function Container(props) {
-      const { products } = props;
+  const { products } = props;
 
   return (
     <div className=" w-full mt-5 bg-white  shadow-mainBox rounded-lg  ">
@@ -27,7 +27,7 @@ function Container(props) {
         </button>
       </div>
 
-      <ProductContainer products={products}/>
+      <ProductContainer products={products} />
     </div>
   );
 }

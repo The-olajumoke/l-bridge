@@ -8,6 +8,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$300",
     currency: "USD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Justin Septimus",
@@ -18,6 +27,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$300",
     currency: "USD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Anika Rhiel Madsen",
@@ -28,6 +46,7 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$200",
     currency: "CAD",
+    moreDetails: [],
   },
   {
     name: "Justin Septimus",
@@ -38,6 +57,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$300",
     currency: "USD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Justin Septimus",
@@ -48,6 +76,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$300",
     currency: "USD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Anika Rhiel Madsen",
@@ -58,6 +95,7 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$200",
     currency: "CAD",
+    moreDetails: [],
   },
   {
     name: "Justin Septimus",
@@ -68,6 +106,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$300",
     currency: "USD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Anika Rhiel Madsen",
@@ -78,6 +125,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$200",
     currency: "CAD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Justin Septimus",
@@ -88,6 +144,15 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$300",
     currency: "USD",
+    moreDetails: [
+      {
+        date: "12/APR/2020",
+        activity:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.",
+      },
+    ],
   },
   {
     name: "Anika Rhiel Madsen",
@@ -98,5 +163,6 @@ export const products = [
     statusOn: "15/APR/2020",
     amount: "$200",
     currency: "CAD",
+    moreDetails: [],
   },
 ];

@@ -18,8 +18,11 @@ function ProductTemp(props) {
     statusOn,
     amount,
     currency,
+    moreDetails,
   } = props;
   const [state, setstate] = useState(false);
+  const [details, setdetails] = useState([]);
+
   return (
     <>
       <div
@@ -113,41 +116,13 @@ function ProductTemp(props) {
             <div className="flex  w-full">
               <h4 className="w-[10%] ">Date</h4>
               <h4 className=" w-[30%]">User Activity</h4>
-              <h4 className="w-3/6 pl-2 flex items-center gap-[5px]">Detail
-              <img src={Detail} alt="" />
+              <h4 className="w-3/6 pl-2 flex items-center gap-[5px]">
+                Detail
+                <img src={Detail} alt="" />
               </h4>
             </div>
           </div>
-
           {/* DETAILS */}
-          <div className="border border-proBorder bg-input flex justify-between items-center  px-24 py-4 h-16 leading-[17px]  tracking-wider text-secFontColor  gap-44 text-sm font-normal">
-            <div className="flex items-center w-full ">
-              <h4 className="w-[10%] ">12/APR/2020</h4>
-              <h4 className="w-[30%] text-priFontCont">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ultricies.
-              </h4>
-              <h4 className="w-3/6  pl-2 text-priFontCont">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae.
-                Ultricies suspendisse vestibulum.
-              </h4>
-            </div>
-          </div>
-          <div className="border border-proBorder bg-input flex justify-between items-center  px-24 py-4 h-16 leading-[17px]  tracking-wider text-secFontColor  gap-44 text-sm font-normal">
-            <div className="flex items-center w-full ">
-              <h4 className="w-[10%] ">12/APR/2020</h4>
-              <h4 className="w-[30%] text-priFontCont">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ultricies.
-              </h4>
-              <h4 className="w-3/6  pl-2 text-priFontCont">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae.
-                Ultricies suspendisse vestibulum.
-              </h4>
-            </div>
-          </div>
           <div className="border border-proBorder bg-input flex justify-between items-center  px-24 py-4 h-16 leading-[17px]  tracking-wider text-secFontColor  gap-44 text-sm font-normal">
             <div className="flex items-center w-full ">
               <h4 className="w-[10%] ">12/APR/2020</h4>
