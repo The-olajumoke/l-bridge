@@ -25,7 +25,7 @@ export default function ProductContainer() {
           <img className=" ml-7" src={more} alt="" />
         </div>
       </div>
-      <div className="border border-paid">
+      <div className="">
         {products.map((pro) => (
           <ProductTemp
             name={pro.name}

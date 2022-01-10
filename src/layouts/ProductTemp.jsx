@@ -5,6 +5,8 @@ import downArr from "../Icons/DownArr.svg";
 import Active from "../Icons/Active.svg";
 import Inactive from "../Icons/Inactive.svg";
 import Paid from "../Icons/Paid.svg";
+import Unpaid from "../Icons/Unpaid.svg";
+import Overdue from "../Icons/Overdue.svg";
 function ProductTemp(props) {
   const {
     name,
@@ -58,10 +60,30 @@ function ProductTemp(props) {
         </div>
         <div className=" flex items-center justify-between p-0 flex-1">
           <div className="flex flex-col gap-[7px] text-left pr-14">
-            <h4 className=" flex gap-1 items-center text-xs leading-4 bg-lightPaid  text-paid rounded-[10px] w-fit p-1">
-              <img src={Paid} alt="" />
-              Paid
-            </h4>
+            {(() => {
+              if (paymentStatus == "Paid") {
+                return (
+                  <h4 className=" flex gap-1 items-center text-xs leading-4 bg-lightPaid  text-paid rounded-[10px] w-fit p-1">
+                    <img src={Paid} alt="" />
+                    Paid
+                  </h4>
+                );
+              } else if (paymentStatus == "Unpaid") {
+                return (
+                  <h4 className=" flex gap-1 items-center text-xs leading-4 bg-lightUnpaid text-unpaid rounded-[10px] w-fit p-1">
+                    <img src={Unpaid} alt="" />
+                    UnPaid
+                  </h4>
+                );
+              } else {
+                return (
+                  <h4 className=" flex gap-1 items-center text-xs leading-4 bg-lightOverdue text-overdue rounded-[10px] w-fit p-1">
+                    <img src={Overdue} alt="" />
+                    Overdue
+                  </h4>
+                );
+              }
+            })()}
 
             <h5 className=" font-medium  text-xs leading-3 text-priFontCont">
               {paymentStatus == "Paid" ? "Paid" : "Dued"} on 15/APR/2020
