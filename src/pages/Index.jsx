@@ -14,7 +14,6 @@ export default function Index() {
     }
   });
 
-
   return (
     <div className="h-screen p-4 bg-background  sm:px-10 lg:px-[100px] md:py-[50px] not-italic flex flex-col">
       <header className="text-secFontColor  text-sm leading-[17px] tracking-widest uppercase  pb-1 font-bold">
@@ -28,7 +27,7 @@ export default function Index() {
               activeTab === "All" ? "text-priFontCont" : "text-secFontColor"
             } font-medium text-sm leading-[17px]  ${
               activeTab === "All" && " border-b-2"
-            } border-priFontCont h-full  px-3 `}
+            } border-priFontCont h-full outline-none  px-3 `}
             onClick={(e) => setactiveTab(e.target.id)}
           >
             All
@@ -39,7 +38,7 @@ export default function Index() {
               activeTab === "Paid" ? "text-priFontCont" : "text-secFontColor"
             } font-medium text-sm leading-[17px]  ${
               activeTab === "Paid" && " border-b-2"
-            } border-priFontCont h-full  px-3 `}
+            } border-priFontCont h-full outline-none  px-3 `}
             onClick={(e) => setactiveTab(e.target.id)}
           >
             Paid
@@ -50,7 +49,7 @@ export default function Index() {
               activeTab === "Unpaid" ? "text-priFontCont" : "text-secFontColor"
             } font-medium text-sm leading-[17px] ${
               activeTab === "Unpaid" && " border-b-2"
-            } border-priFontCont h-full  px-3 `}
+            } border-priFontCont h-full outline-none  px-3 `}
             onClick={(e) => setactiveTab(e.target.id)}
           >
             Unpaid
@@ -61,7 +60,7 @@ export default function Index() {
               activeTab === "Overdue" ? "text-priFontCont" : "text-secFontColor"
             } font-medium text-sm leading-[17px] ${
               activeTab === "Overdue" && " border-b-2"
-            } border-priFontCont h-full  px-3 `}
+            } border-priFontCont h-full outline-none  px-3 `}
             onClick={(e) => setactiveTab(e.target.id)}
           >
             Overdue

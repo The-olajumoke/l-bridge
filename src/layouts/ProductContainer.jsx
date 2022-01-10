@@ -26,7 +26,7 @@ function ProductContainer(props) {
           <img className=" ml-7" src={more} alt="" />
         </div>
       </div>
-      <div className=" overflow-y-scroll no-scrollbar max-h-96">
+      <div className=" overflow-y-scroll no-scrollbar  max-h-[400px] ">
         {products.map((pro, index) => {
           return (
             <ProductTemp

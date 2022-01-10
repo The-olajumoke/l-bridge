@@ -26,7 +26,7 @@ function ProductTemp(props) {
   return (
     <>
       <div
-        className={`border border-proBorder flex sm:flex-row flex-col  justify-between items-center  sm:px-5 py-4 h-auto sm:h-16 font-semibold text-xs leading-3  tracking-wider text-secFontColor gap-4  lg:gap-20 xl:gap-32 ${
+        className={`border border-proBorder flex sm:flex-row flex-col  justify-between items-center  sm:px-5 py-4 h-auto  font-semibold text-xs leading-3  tracking-wider text-secFontColor gap-4  lg:gap-20 xl:gap-32 ${
           state && "bg-input"
         }`}
       >
@@ -114,8 +114,8 @@ function ProductTemp(props) {
         <div>
           <div className="uppercase border border-proBorder bg-input flex justify-between items-center  px-24 py-4 h-11 font-semibold text-xs leading-3  tracking-wider text-secFontColor gap-44 ">
             <div className="flex  w-full">
-              <h4 className="w-[10%] ">Date</h4>
-              <h4 className=" w-[30%]">User Activity</h4>
+              <h4 className=" w-[10%] mr-2 ">Date</h4>
+              <h4 className=" w-[30%] ">User Activity</h4>
               <h4 className="w-3/6 pl-2 flex items-center gap-[5px]">
                 Detail
                 <img src={Detail} alt="" />
@@ -123,9 +123,9 @@ function ProductTemp(props) {
             </div>
           </div>
           {/* DETAILS */}
-          <div className="border border-proBorder bg-input flex justify-between items-center  px-24 py-4 h-16 leading-[17px]  tracking-wider text-secFontColor  gap-44 text-sm font-normal">
-            <div className="flex items-center w-full ">
-              <h4 className="w-[10%] ">12/APR/2020</h4>
+          <div className="border border-proBorder w-full bg-input flex justify-between items-center  px-24 py-4  leading-[17px]  tracking-wider text-secFontColor  text-sm font-normal">
+            <div className="flex items-center w-full">
+              <h4 className="w-[10%] mr-2 ">12/APR/2020</h4>
               <h4 className="w-[30%] text-priFontCont">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Ultricies.
