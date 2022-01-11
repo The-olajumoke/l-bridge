@@ -35,6 +35,7 @@ module.exports = {
       height: {
         "10%": "10%",
         "30%": "30%",
+        "35%": "35%",
       },
       boxShadow: {
         mainBox: "0px 0px 5px rgba(0, 0, 0, 0.2)",
